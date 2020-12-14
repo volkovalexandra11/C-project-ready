@@ -1,0 +1,35 @@
+﻿@using System;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">I'm a very stupid Graph Drawer</h1>
+    <form method="post" action="~/Home/Graph">
+        <p>
+            <label>Hello bitch! Вводи свою функцию</label><br />
+            <br />
+            -
+            @for (var i = 0; i < ViewBag.FunctionCount; i++)
+            {
+                if (ViewBag.Functions.Count > i)
+                {
+                    <input type="text" name="name" value="@ViewBag.Functions[i]" />
+                    <input type="color" name="col" value="@ViewBag.Colors[i]"/><br/>
+                    <br />
+                }
+                else
+                {
+                    <input type="text" name="func" />
+                    <input type="color" name="col" /><br/>
+                    <br />
+                }
+            }
+        </p>
+        <p>
+            <input type="submit" value="Построить" />
+            <a asp-area="" asp-controller="Home" asp-action="Index" asp-route-functionCount="@ViewBag.FunctionCount">Добавить функцию</a>
+        </p>
+    </form>
+</div>

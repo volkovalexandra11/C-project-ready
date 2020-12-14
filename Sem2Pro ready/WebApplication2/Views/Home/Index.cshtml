@@ -1,0 +1,19 @@
+﻿<div class="text-center">
+    <h1 class="display-4">I'm a very stupid Graph Drawer</h1>
+    @ViewBag.Function
+    <form method="post", asp-controller="Home", asp-action="Graph">
+        <p>
+            <label>Hello bitch! Вводи свою функцию</label><br />
+            <br />
+            <input type="text" name="func" placeholder="функция"/>
+            <input type="color" name="col" /><br />
+            <input type="number" name="leftBorder" placeholder="левая граница"/>
+            <input type="number" name="rightBorder" placeholder="правая граница"/><br />
+            <br />
+        </p>
+        <p>
+            <input type="submit" name="draw" value="Построить" />
+            <input type="submit" name="addFunction" value="Добавить функцию" />
+        </p>
+    </form>
+</div>
