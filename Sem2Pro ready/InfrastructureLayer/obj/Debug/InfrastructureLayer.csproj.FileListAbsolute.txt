@@ -1,0 +1,6 @@
+C:\Users\Сергей\source\repos\Sem2Pro\InfrastructureLayer\bin\Debug\InfrastructureLayer.exe.config
+C:\Users\Сергей\source\repos\Sem2Pro\InfrastructureLayer\bin\Debug\InfrastructureLayer.exe
+C:\Users\Сергей\source\repos\Sem2Pro\InfrastructureLayer\bin\Debug\InfrastructureLayer.pdb
+C:\Users\Сергей\source\repos\Sem2Pro\InfrastructureLayer\obj\Debug\InfrastructureLayer.csproj.CoreCompileInputs.cache
+C:\Users\Сергей\source\repos\Sem2Pro\InfrastructureLayer\obj\Debug\InfrastructureLayer.exe
+C:\Users\Сергей\source\repos\Sem2Pro\InfrastructureLayer\obj\Debug\InfrastructureLayer.pdb
