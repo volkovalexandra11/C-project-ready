@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using System.Security.Cryptography.X509Certificates;
 using Infrastructure.Infrastructure;
 using Infrastructure.TopDowns;
 using NUnit.Framework;
@@ -29,6 +30,16 @@ namespace TokenParsing_Tests
 
             inp = "(2+(x*7 - 4)) / (5 + (6*x*(x / 7)))";
             exp = x => (2 + (x * 7 - 4)) / (5 + (6 * x * (x / 7)));
+            yield return new object[] { inp, exp.Body };
+
+            inp = "-x - 1 + 7 / x * 5 + x - 4";
+            exp = x => (-x - 1) + ((7 / x) * 5) + (x - 4);
+            yield return new object[] { inp, exp.Body };
+
+            inp = "-x^7 + 3*x^6 - 5*x^3 + ln(x)*(-x^2) - min(4, 5)";
+            exp = x => -Math.Pow(x, 7)
+                       + (3 * Math.Pow(x, 6) - 5 * Math.Pow(x, 3))
+                       + (Math.Log(x) * (-Math.Pow(x, 2)) - Math.Min(4.0, 5.0));
             yield return new object[] { inp, exp.Body };
         }
 
@@ -81,18 +92,72 @@ namespace TokenParsing_Tests
             yield return new object[] { inp, expr.Body };
         }
 
+
         [Test, TestCaseSource(nameof(CallTestSource))]
         public void TestCall(string input, Expression expected)
         {
             PerformTest(input, expected);
         }
 
+        private static IEnumerable<object[]> UnaryMinusSource()
+        {
+            var inp = "-x - 7 - x";
+            Expression<Func<double, double>> exp = x => -x - 7 - x;
+            yield return new object[] { inp, exp.Body };
+        }
+
+        [Test, TestCaseSource(nameof(UnaryMinusSource))]
+        public void TestUnaryMinus(string input, Expression expected)
+        {
+            PerformTest(input, expected);
+        }
+
+        private static IEnumerable<object[]> MultipleArgsCallSource()
+        {
+            var inp = "log(2, x) * x";
+            Expression<Func<double, double>> exp = x => Math.Log(2, x) * x;
+            yield return new object[] { inp, exp.Body };
+
+            inp = "-min(-x^2 + 7, -(7 * x^2))";
+            exp = x => -Math.Min(-Math.Pow(x, 2) + 7, -(7 * Math.Pow(x, 2)));
+            yield return new object[] { inp, exp.Body };
+        }
+
+        [TestCaseSource(nameof(MultipleArgsCallSource))]
+        public void TestMultipleArgsCall(string input, Expression expected)
+        {
+            PerformTest(input, expected);
+        }
+
         private void PerformTest(string input, Expression expected)
         {
-            var combinator = new ParserCombinator();
-            var userInput = new UserInput(input);
-            var actual = combinator.Parse(userInput.FullInput, userInput);
+            var actual = GetCombinator().Parse(new PrioritizedString(input), new ParameterInfo());
             Assert.True(ExpressionComparer.AreEqual(actual, expected));
+        }
+
+
+        private ParserCombinator combinator;
+        private ParserCombinator GetCombinator()
+        {
+            if (combinator != null) return combinator;
+
+            var lazyComb = new Lazy<ParserCombinator>(() => combinator);
+            var parsers = new IParser[]
+            {
+                new WhereParser(lazyComb),
+                new AdditionParser(lazyComb),
+                new SubtractionParser(lazyComb),
+                new MultiplicationParser(lazyComb),
+                new DivisionParser(lazyComb),
+                new UnaryMinusParser(lazyComb),
+                new CallParser(lazyComb),
+                new PowerParser(lazyComb),
+                new NumericParser(lazyComb),
+                new ParameterParser(lazyComb),
+                new BracketParser(lazyComb)
+            };
+            combinator = new ParserCombinator(parsers);
+            return combinator;
         }
     }
 }
