@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text.RegularExpressions;
@@ -8,8 +9,10 @@ namespace Infrastructure.TopDowns
 {
     public class WhereParser : IParser
     {
-        public ParserCombinator Combinator { get; }
+        public ParserCombinator Combinator => LazyCombinator.Value;
         public ParserOrder Order { get; } = ParserOrder.Where;
+
+        protected readonly Lazy<ParserCombinator> LazyCombinator;
 
         private static string ParamNamePattern { get; }
             = @"(?<paramName>[a-zA-Z]+\d*)";
@@ -17,47 +20,44 @@ namespace Infrastructure.TopDowns
             $@"{ParamNamePattern}\s*=\s*(?<paramExpr>.+?)(?=(,\s*([a-zA-Z]+\d*)\s*=\s*)|$)"
         );
 
-        public WhereParser(ParserCombinator combinator)
+        public WhereParser(Lazy<ParserCombinator> combinator)
         {
-            Combinator = combinator;
+            LazyCombinator = combinator;
         }
-
-        public bool TryParse(PrioritizedString expr, UserInput input, out Expression parsed)
+        
+        public bool TryParse(PrioritizedString expr, ParameterInfo paramInfo, out Expression parsed)
         {
-            if (input.MainExpression != null || input.ParameterExpressions.Any())
-                throw new InvalidOperationException("Where has already been found");
-
             var minPriorityInds = expr.Priorities.GetMinIndexes();
             var whereParts = expr.SplitOnSubset("where", minPriorityInds);
             if (whereParts.Length > 2)
-                throw new ArgumentException("Too many 'where' parts!");
+                throw new ParseException("Too many 'where'!");
+
             if (whereParts.Length == 1)
             {
                 parsed = null;
-                input.MainExpression = whereParts[0];
                 return false;
             }
 
             var mainFunc = whereParts[0];
             if (mainFunc.Input.Last() == ',')
                 mainFunc = mainFunc.Substring(0, mainFunc.Input.Length - 1);
-            input.MainExpression = mainFunc;
 
+            var parameterExpressions = new Dictionary<string, PrioritizedString>();
             foreach (Match match in ParameterRe.Matches(whereParts[1].Input))
             {
                 var (paramName, paramExpr) = (match.Groups["paramName"].Value, match.Groups["paramExpr"].Value);
-                if (input.Parameters.ContainsKey(paramName))
-                    throw new ArgumentException($"Parameter {paramName} is defined multiple times");
+                if (paramInfo.Parameters.ContainsKey(paramName))
+                    throw new ParseException($"Parameter {paramName} is defined multiple times");
 
-                input.Parameters[paramName] = Expression.Parameter(typeof(double), paramName);
-                input.ParameterExpressions[paramName] = new PrioritizedString(paramExpr);
+                paramInfo.Parameters[paramName] = Expression.Parameter(typeof(double), paramName);
+                parameterExpressions[paramName] = new PrioritizedString(paramExpr);
             }
-            var parameterExprs = input.ParameterExpressions
+            var parameterExprs = parameterExpressions
                 .ToDictionary(
                     nameWithExpr => nameWithExpr.Key,
-                    nameWithExpr => Combinator.ParseFunctionalExpression(nameWithExpr.Value, input)
+                    nameWithExpr => Combinator.ParseFunctionalExpression(nameWithExpr.Value, paramInfo)
                 );
-            var mainExpr = Combinator.ParseFunctionalExpression(mainFunc, input);
+            var mainExpr = Combinator.ParseFunctionalExpression(mainFunc, paramInfo);
 
             var paramReplacer = new ParameterReplacerVisitor(parameterExprs);
             parsed = paramReplacer.Visit(mainExpr);

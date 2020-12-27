@@ -10,6 +10,8 @@ namespace Infrastructure.TopDowns
         public string Input { get; }
         public int[] Priorities { get; }
 
+        public int Length => Input.Length;
+
         public PrioritizedString(string input)
         {
             Input = input;
@@ -33,6 +35,11 @@ namespace Infrastructure.TopDowns
             var trimmed = Input.Trim();
             var startInd = Input.IndexOf(trimmed);
             return new PrioritizedString(this, startInd, trimmed.Length);
+        }
+
+        public PrioritizedString Concat(PrioritizedString other)
+        {
+            return new PrioritizedString(Input + other.Input);
         }
 
         public PrioritizedString[] SplitOnSubset(string splitter, int[] subsetIndexes)
@@ -62,11 +69,11 @@ namespace Infrastructure.TopDowns
 
                 if (c.IsOpeningBracket())
                 {
-                    currPriority += (int)BasePriority.BracketDelta;
+                    currPriority += 1;
                 }
                 else if (c.IsClosingBracket())
                 {
-                    currPriority -= (int)BasePriority.BracketDelta;
+                    currPriority -= 1;
                 }
 
                 priorities[ind] = currPriority;

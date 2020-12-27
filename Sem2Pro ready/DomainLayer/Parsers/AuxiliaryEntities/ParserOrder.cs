@@ -7,6 +7,7 @@
         Subtraction,
         Multiplication,
         Division,
+        UnaryMinus,
         Call,
         Power,
         Numeric,

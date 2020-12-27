@@ -9,17 +9,17 @@ namespace Infrastructure.TopDowns
 {
     public class CallParser : IParser
     {
-        public ParserCombinator Combinator { get; }
+        public ParserCombinator Combinator => LazyCombinator.Value;
         public ParserOrder Order { get; } = ParserOrder.Call;
 
-        private static Dictionary<string, MethodInfo> Methods { get; }
+        protected readonly Lazy<ParserCombinator> LazyCombinator;
+
+        private static Dictionary<string, MethodInfo> OneArgMethods { get; }
             = new Dictionary<string, MethodInfo>
             {
                 ["abs"] = GetFromMath("Abs"),
                 ["sqrt"] = GetFromMath("Sqrt"),
                 //["cbrt"] = GetFromMath("Cbrt"),
-                //["min"] = GetFromMath("Min"),
-                //["max"] = GetFromMath("Max"),
 
                 ["sin"] = GetFromMath("Sin"),
                 ["cos"] = GetFromMath("Cos"),
@@ -47,45 +47,95 @@ namespace Infrastructure.TopDowns
                 ["sign"] = GetFromMath("Sign")
             };
 
-        private static string[] MethodNamesSorted { get; }
-            = Methods.Keys.OrderByDescending(key => key.Length).ToArray();
+        private static Dictionary<string, (MethodInfo method, int argCount)> MultipleArgMethods { get; }
+            = new Dictionary<string, (MethodInfo, int)>
+            {
+                ["log"] = (GetFromMath("Log", 2), 2),
+                ["min"] = (GetFromMath("Min", 2), 2),
+                ["max"] = (GetFromMath("Max", 2), 2)
+            };
 
-        public CallParser(ParserCombinator combinator)
+        private static Dictionary<string, Dictionary<int, MethodInfo>> MethodsByArgCount { get; }
+            = OneArgMethods
+                .Select(nameWithMethod => (methodName: nameWithMethod.Key, method: nameWithMethod.Value, argCount: 1))
+                .Concat(MultipleArgMethods
+                    .Select(nameWithMethodAndData => (
+                        nameWithMethodAndData.Key,
+                        nameWithMethodAndData.Value.method,
+                        nameWithMethodAndData.Value.argCount
+                    ))
+                )
+                .GroupBy(methods => methods.Item1)
+                .Select(sameNameMethods => (
+                    sameNameMethods.Key,
+                    sameNameMethods.ToDictionary(method => method.argCount, method => method.method)
+                ))
+                .ToDictionary(sameNameDicts => sameNameDicts.Key, sameNameDicts => sameNameDicts.Item2);
+
+        private static string[] MethodNamesSorted { get; }
+            = MethodsByArgCount.Keys.OrderByDescending(key => key.Length).ToArray();
+
+        public CallParser(Lazy<ParserCombinator> combinator)
         {
-            Combinator = combinator;
+            LazyCombinator = combinator;
         }
 
-        public bool TryParse(PrioritizedString expr, UserInput input, out Expression parsed)
+        public bool TryParse(PrioritizedString expr, ParameterInfo paramInfo, out Expression parsed)
         {
             expr = expr.Trim();
             foreach (var methodName in MethodNamesSorted)
             {
                 if (!expr.Input.StartsWith(methodName))
                     continue;
-                var method = Methods[methodName];
-                var argument = expr.Substring(methodName.Length, expr.Input.Length - methodName.Length);
-                var argumentExpr = Combinator.Parse(argument, input, Order);
-                parsed = Expression.Call(method, argumentExpr);
+                if (char.IsWhiteSpace(expr.Input[methodName.Length]))
+                {
+                    throw new ParseException($"Whitespace after call of {methodName}");
+                }
+                if (expr.Input[methodName.Length].IsOpeningBracket() && !expr.Input[expr.Length - 1].IsClosingBracket()
+                    || !expr.Input[methodName.Length].IsOpeningBracket() && expr.Input[expr.Length - 1].IsClosingBracket())
+                {
+                    throw new ParseException($"No matching call brackets in {methodName} call: {expr.Input}");
+                }
+                var (argsStart, argsEnd) = expr.Input[methodName.Length].IsOpeningBracket()
+                    ? (methodName.Length + 1, expr.Length - 2)
+                    : (methodName.Length, expr.Length - 1);
+                var funcArgs = expr.Substring(argsStart, argsEnd - argsStart + 1);
+                var arguments = SplitArguments(funcArgs);
+                if (!MethodsByArgCount[methodName].TryGetValue(arguments.Length, out var method))
+                {
+                    throw new ParseException($"No known {methodName} functions with {arguments.Length} arguments");
+                }
+                var argumentExprs = arguments.Select(arg => Combinator.ParseFunctionalExpression(arg, paramInfo)).ToList();
+                parsed = Expression.Call(method, argumentExprs);
                 return true;
             }
             parsed = null;
             return false;
         }
 
-        private static MethodInfo GetFromMath(string name)
+        private static PrioritizedString[] SplitArguments(PrioritizedString funcArgs)
         {
-            return typeof(Math).GetMethod(name, new[] { typeof(double) })
+            var minPriorityInds = funcArgs.Priorities.GetMinIndexes();
+            return funcArgs.SplitOnSubset(",", minPriorityInds);
+        }
+
+        private static MethodInfo GetStaticMethodFromType(Type type, string methodName, int argCount = 1)
+        {
+            var argTypes = Enumerable.Repeat(typeof(double), argCount).ToArray();
+            return type.GetMethod(methodName, argTypes)
                    ?? throw new InvalidOperationException(
-                       $"Coulnd't find {nameof(Math)} method {name}"
+                       $"Coulnd't find {type.Name} method {methodName}"
                    );
         }
 
-        private static MethodInfo GetFromMathExt(string name)
+        private static MethodInfo GetFromMath(string name, int argCount = 1)
         {
-            return typeof(MathExtensions).GetMethod(name, new[] { typeof(double) })
-                   ?? throw new InvalidOperationException(
-                       $"Coulnd't find {nameof(MathExtensions)} method {name}"
-                   );
+            return GetStaticMethodFromType(typeof(Math), name, argCount);
+        }
+
+        private static MethodInfo GetFromMathExt(string name, int argCount = 1)
+        {
+            return GetStaticMethodFromType(typeof(MathExtensions), name, argCount);
         }
     }
 }

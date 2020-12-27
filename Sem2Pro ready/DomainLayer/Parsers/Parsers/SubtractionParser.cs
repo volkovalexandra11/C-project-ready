@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Linq.Expressions;
 
 namespace Infrastructure.TopDowns
@@ -8,18 +9,18 @@ namespace Infrastructure.TopDowns
         public override ParserOrder Order { get; } = ParserOrder.Subtraction;
         protected override string Symbol { get; } = "-";
 
-        public SubtractionParser(ParserCombinator combinator) : base(combinator)
+        public SubtractionParser(Lazy<ParserCombinator> lazyCombinator)
+            : base(lazyCombinator)
         {
         }
 
         protected override Expression GetExpression(Expression[] arguments)
         {
-            var reverseArguments = arguments.Reverse().ToArray();
-            return reverseArguments
+            return arguments
                 .Skip(2)
                 .Aggregate(
-                    Expression.Subtract(reverseArguments[1], reverseArguments[0]),
-                    (subtrExpr, prevArg) => Expression.Subtract(prevArg, subtrExpr)
+                    Expression.Subtract(arguments[0], arguments[1]),
+                    Expression.Subtract
                 );
         }
     }

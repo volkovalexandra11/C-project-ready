@@ -9,6 +9,7 @@ namespace FunctionGraph
 {
     public interface IPointsGetter
     {
-        PointPairList GetPointsForOneFunction(Function function, double leftBound, double rightBound);
+        PointPairList GetPointsForOneFunction(Function func, double leftBound, double rightBound);
+        PointPairList GetPointsForOneFunction(FunctionByPoints func, double leftBound, double rightBound);
     }
 }

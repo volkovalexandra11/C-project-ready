@@ -6,6 +6,6 @@ namespace Infrastructure.TopDowns
     {
         ParserOrder Order { get; }
         ParserCombinator Combinator { get; }
-        bool TryParse(PrioritizedString expr, UserInput input, out Expression parsed);
+        bool TryParse(PrioritizedString expr, ParameterInfo paramInfo, out Expression parsed);
     }
 }

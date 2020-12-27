@@ -68,17 +68,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Drawing\Function.cs" />
+    <Compile Include="Drawing\FunctionByPoints.cs" />
     <Compile Include="Drawing\FunctionDrawer.cs" />
     <Compile Include="Drawing\Graph.cs" />
     <Compile Include="Drawing\GraphDrawer.cs" />
     <Compile Include="Drawing\IDrawer.cs" />
     <Compile Include="Drawing\IPointsGetter.cs" />
     <Compile Include="Drawing\PontsGetter.cs" />
-    <Compile Include="Parsers\AuxiliaryEntities\BasePriority.cs" />
     <Compile Include="Parsers\AuxiliaryEntities\IParser.cs" />
+    <Compile Include="Parsers\AuxiliaryEntities\ParseException.cs" />
     <Compile Include="Parsers\AuxiliaryEntities\ParserOrder.cs" />
     <Compile Include="Parsers\AuxiliaryEntities\PrioritizedString.cs" />
-    <Compile Include="Parsers\AuxiliaryEntities\UserInput.cs" />
+    <Compile Include="Parsers\AuxiliaryEntities\ParameterInfo.cs" />
     <Compile Include="Parsers\Parsers\AdditionParser.cs" />
     <Compile Include="Parsers\Parsers\BinaryInfixParser.cs" />
     <Compile Include="Parsers\Parsers\BracketParser.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="Parsers\Parsers\ParserCombinator.cs" />
     <Compile Include="Parsers\Parsers\PowerParser.cs" />
     <Compile Include="Parsers\Parsers\SubtractionParser.cs" />
+    <Compile Include="Parsers\Parsers\UnaryMinusParser.cs" />
     <Compile Include="Parsers\Parsers\WhereParser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

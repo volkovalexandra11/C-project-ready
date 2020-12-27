@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Linq.Expressions;
 using Infrastructure.Infrastructure;
 
@@ -6,15 +7,18 @@ namespace Infrastructure.TopDowns
 {
     public class BracketParser : IParser
     {
-        public ParserCombinator Combinator { get; }
+        public ParserCombinator Combinator => LazyCombinator.Value;
         public ParserOrder Order { get; } = ParserOrder.Bracket;
 
-        public BracketParser(ParserCombinator combinator)
+        protected readonly Lazy<ParserCombinator> LazyCombinator;
+
+
+        public BracketParser(Lazy<ParserCombinator> combinator)
         {
-            Combinator = combinator;
+            LazyCombinator = combinator;
         }
 
-        public bool TryParse(PrioritizedString expr, UserInput input, out Expression parsed)
+        public bool TryParse(PrioritizedString expr, ParameterInfo paramInfo, out Expression parsed)
         {
             expr = expr.Trim();
             var exprStr = expr.Input;
@@ -25,7 +29,7 @@ namespace Infrastructure.TopDowns
             }
 
             var exprWithoutBrackets = expr.Substring(1, expr.Input.Length - 2);
-            parsed = Combinator.ParseFunctionalExpression(exprWithoutBrackets, input);
+            parsed = Combinator.ParseFunctionalExpression(exprWithoutBrackets, paramInfo);
             return true;
         }
     }

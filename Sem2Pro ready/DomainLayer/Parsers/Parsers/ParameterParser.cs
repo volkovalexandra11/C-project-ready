@@ -1,35 +1,38 @@
-﻿using System.Linq.Expressions;
+﻿using System;
+using System.Linq.Expressions;
 using System.Text.RegularExpressions;
 
 namespace Infrastructure.TopDowns
 {
     public class ParameterParser : IParser
     {
-        public ParserCombinator Combinator { get; }
+        public ParserCombinator Combinator => LazyCombinator.Value;
         public ParserOrder Order { get; } = ParserOrder.Parameter;
+
+        protected readonly Lazy<ParserCombinator> LazyCombinator;
 
         private static Regex ParameterRe { get; } = new Regex(@"^[a-zA-Z]+\d*$");
 
-        public ParameterParser(ParserCombinator combinator)
+        public ParameterParser(Lazy<ParserCombinator> combinator)
         {
-            Combinator = combinator;
+            LazyCombinator = combinator;
         }
 
-        public bool TryParse(PrioritizedString expr, UserInput input, out Expression parsed)
+        public bool TryParse(PrioritizedString expr, ParameterInfo paramInfo, out Expression parsed)
         {
             expr = expr.Trim();
             var exprStr = expr.Input;
-            if (input.Parameters.TryGetValue(exprStr, out var param))
+            if (paramInfo.Parameters.TryGetValue(exprStr, out var param))
             {
                 parsed = param;
                 return true;
             }
 
-            if (input.MainParameter is null && ParameterRe.IsMatch(exprStr))
+            if (paramInfo.MainParameter is null && ParameterRe.IsMatch(exprStr))
             {
-                input.MainParameter = exprStr;
+                paramInfo.MainParameter = exprStr;
                 var mainParam = Expression.Parameter(typeof(double), exprStr);
-                input.Parameters[exprStr] = mainParam;
+                paramInfo.Parameters[exprStr] = mainParam;
                 parsed = mainParam;
                 return true;
             }

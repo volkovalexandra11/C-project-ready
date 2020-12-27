@@ -1,27 +1,64 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
+using FunctionGraph;
 using ZedGraph;
 
-
-namespace FunctionGraph
+namespace DomainLayer.Drawing
 {
     public class GraphDrawer : IDrawer
     {
+        private readonly ZedGraphControl zedGraph;
+
+        public GraphDrawer(ZedGraphControl control)
+        {
+            zedGraph = control;
+        }
         public Bitmap Draw(IEnumerable<Graph> graphs)
         {
-            var zedGraph = new ZedGraphControl();
+            var gr = graphs.ToList();
             var graphPane = zedGraph.GraphPane;
-            foreach (var graph in graphs)
+            graphPane.Title.Text = "";
+            graphPane.CurveList.Clear();
+            var minY = double.MaxValue;
+            var maxY = double.MinValue;
+            var minX = gr.Select(graph => graph.LeftBorder).Min();
+            var maxX = gr.Select(graph => graph.RightBorder).Max();
+            AddFunctions(gr, graphPane, ref minY, ref maxY);
+            DrawAxis(graphPane, minX, minY, maxX, maxY);
+            graphPane.AxisChange();
+            return zedGraph.MasterPane.GetImage(1000, 600, 25);
+        }
+
+        private void AddFunctions(List<Graph> gr, GraphPane graphPane, ref double minY, ref double maxY)
+        {
+            foreach (var graph in gr)
             {
-                var line = graphPane.AddCurve(graph.Name, graph.Points, graph.color);
+                foreach (var point in graph.Points)
+                {
+                    if (point.Y < minY)
+                        minY = point.Y;
+                    if (point.Y > maxY)
+                        maxY = point.Y;
+                }
+                var line = graphPane.AddCurve(graph.Name, graph.Points, graph.color, SymbolType.None);
+                line.Line.Style = graph.style;
                 line.Line.IsSmooth = true;
                 line.Line.Width = 3f;
             }
+        }
 
-            graphPane.YAxis.Scale.Max = 20;
-            graphPane.YAxis.Scale.Min = -20;
-            graphPane.AxisChange();
-            return zedGraph.MasterPane.GetImage(1000, 600, 25);
+        private void DrawAxis(GraphPane graphPane, double minX, double minY, double maxX, double maxY)
+        {
+            graphPane.XAxis.Scale.Min = minX - 5;
+            graphPane.XAxis.Scale.Max = maxX + 5;
+            graphPane.XAxis.Cross = 0.0;
+            graphPane.YAxis.Cross = 0.0;
+            graphPane.XAxis.Title.Text = "";
+            graphPane.YAxis.Title.Text = "";
+            graphPane.YAxis.Scale.Max = maxY + 5;
+            graphPane.YAxis.Scale.Min = minY - 5;
         }
     }
 }

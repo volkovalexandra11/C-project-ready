@@ -13,7 +13,8 @@ namespace Infrastructure.TopDowns
         private static MethodInfo PowerMethod { get; }
             = typeof(Math).GetMethod("Pow");
 
-        public PowerParser(ParserCombinator combinator) : base(combinator)
+        public PowerParser(Lazy<ParserCombinator> lazyCombinator)
+            : base(lazyCombinator)
         {
         }
 

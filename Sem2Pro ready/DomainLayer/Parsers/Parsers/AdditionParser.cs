@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Linq.Expressions;
 
 namespace Infrastructure.TopDowns
@@ -8,7 +9,8 @@ namespace Infrastructure.TopDowns
         public override ParserOrder Order { get; } = ParserOrder.Addition;
         protected override string Symbol { get; } = "+";
 
-        public AdditionParser(ParserCombinator combinator) : base(combinator)
+        public AdditionParser(Lazy<ParserCombinator> lazyCombinator)
+            : base(lazyCombinator)
         {
         }
 

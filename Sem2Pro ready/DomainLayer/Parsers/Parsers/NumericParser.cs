@@ -1,18 +1,21 @@
-﻿using System.Linq.Expressions;
+﻿using System;
+using System.Linq.Expressions;
 
 namespace Infrastructure.TopDowns
 {
     public class NumericParser : IParser
     {
-        public ParserCombinator Combinator { get; }
+        public ParserCombinator Combinator => LazyCombinator.Value;
         public ParserOrder Order { get; } = ParserOrder.Numeric;
 
-        public NumericParser(ParserCombinator combinator)
+        protected readonly Lazy<ParserCombinator> LazyCombinator;
+
+        public NumericParser(Lazy<ParserCombinator> combinator)
         {
-            Combinator = combinator;
+            LazyCombinator = combinator;
         }
 
-        public bool TryParse(PrioritizedString expr, UserInput input, out Expression parsed)
+        public bool TryParse(PrioritizedString expr, ParameterInfo paramInfo, out Expression parsed)
         {
             expr = expr.Trim();
             
