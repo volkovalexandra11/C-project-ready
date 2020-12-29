@@ -19,45 +19,35 @@ namespace UserLayer.Controllers
             this.cache = cache;
         }
 
-        [HttpPost]
-        public IActionResult Graph(FunctionDescription[] functionDescriptions,
-            string draw,
-            string addFunctions)
-        {
-            if (!string.IsNullOrEmpty(draw))
-            {
-                return ProcessDraw(functionDescriptions);
-            }
-            
-            if (!string.IsNullOrEmpty(addFunctions))
-            {
-                var model = new ByFunctionPageViewModel
-                {
-                    Functions = functionDescriptions.Append(new FunctionDescription
-                    {
-                        Function = "",
-                        LeftBorder = -10,
-                        RightBorder = 10
-                    }).ToArray()
-                };
 
-                return View("../Home/ByFunction", model);
-            }
-
-            return RedirectToAction("ByFunction", "Home");
-        }
-
-        private IActionResult ProcessDraw(FunctionDescription[] functionDescriptions)
+        public IActionResult ProcessDraw(FunctionDescription[] functionDescriptions)
         {
             try
             {
-                return View(drawer.Draw(functionDescriptions));
+                return View("Graph",drawer.Draw(functionDescriptions));
             }
             catch (DrawingException e)
             {
                 return Error(e.Message);
             }
         }
+
+        public IActionResult ProcessAdd(FunctionDescription[] functionDescriptions)
+        {
+            var model = new ByFunctionPageViewModel
+            {
+                Functions = functionDescriptions.Append(new FunctionDescription
+                {
+                    Function = "",
+                    LeftBorder = -10,
+                    RightBorder = 10
+                }).ToArray()
+            };
+
+            return View("../Home/ByFunction", model);
+        }
+    
+        
 
         public IActionResult NewGraph(Guid name)
         {
