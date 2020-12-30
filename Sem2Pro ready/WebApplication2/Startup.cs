@@ -44,8 +44,6 @@ namespace WebApplication2
             services.AddSingleton<Drawer>();
             services.AddSingleton<DrawerForPoints>();
             services.AddSingleton<Cache>();
-            services.AddSingleton<DrawingService>();
-            services.AddSingleton<PointsDrawingService>();
             services.AddDistributedMemoryCache();
             RegisterParsers(services);
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
@@ -77,7 +75,7 @@ namespace WebApplication2
         }
 
 
-        private static void RegisterParsers(IServiceCollection services)
+        private void RegisterParsers(IServiceCollection services)
         {
             services.AddSingleton<ParserCombinator, ParserCombinator>();
             services.AddSingleton(provider =>
@@ -86,14 +84,15 @@ namespace WebApplication2
             services.AddSingleton<IParser, AdditionParser>();
             services.AddSingleton<IParser, BracketParser>();
             services.AddSingleton<IParser, CallParser>();
+            services.AddSingleton<IParser, ConstantParser>();
             services.AddSingleton<IParser, DivisionParser>();
             services.AddSingleton<IParser, MultiplicationParser>();
             services.AddSingleton<IParser, NumericParser>();
             services.AddSingleton<IParser, ParameterParser>();
             services.AddSingleton<IParser, PowerParser>();
             services.AddSingleton<IParser, SubtractionParser>();
-            services.AddSingleton<IParser, UnaryMinusParser>();
             services.AddSingleton<IParser, WhereParser>();
+            services.AddSingleton<IParser, UnarySignParser>();
         }
     }
 }
