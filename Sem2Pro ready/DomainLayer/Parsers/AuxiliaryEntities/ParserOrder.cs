@@ -7,9 +7,10 @@
         Subtraction,
         Multiplication,
         Division,
-        UnaryMinus,
+        UnarySign,
         Call,
         Power,
+        Constant,
         Numeric,
         Parameter,
         Bracket

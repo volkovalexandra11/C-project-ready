@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Linq.Expressions;
 
 namespace Infrastructure.TopDowns
@@ -18,8 +19,12 @@ namespace Infrastructure.TopDowns
         public bool TryParse(PrioritizedString expr, ParameterInfo paramInfo, out Expression parsed)
         {
             expr = expr.Trim();
-            
-            if (double.TryParse(expr.Input, out var num))
+            if (double.TryParse(
+                expr.Input,
+                NumberStyles.AllowDecimalPoint | NumberStyles.AllowLeadingSign,
+                CultureInfo.InvariantCulture,
+                out var num)
+            )
             {
                 parsed = Expression.Constant(num);
                 return true;
