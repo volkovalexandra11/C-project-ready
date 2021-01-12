@@ -1,9 +1,0 @@
-C:\Users\Сергей\source\repos\Sem2Pro\TokenParsing\obj\Debug\net472\TokenParsing.AssemblyInfoInputs.cache
-C:\Users\Сергей\source\repos\Sem2Pro\TokenParsing\obj\Debug\net472\TokenParsing.AssemblyInfo.cs
-C:\Users\Сергей\source\repos\Sem2Pro\TokenParsing\obj\Debug\net472\TokenParsing.csproj.CoreCompileInputs.cache
-C:\Users\Сергей\source\repos\Sem2Pro\TokenParsing\bin\Debug\net472\TokenParsing.exe.config
-C:\Users\Сергей\source\repos\Sem2Pro\TokenParsing\bin\Debug\net472\TokenParsing.exe
-C:\Users\Сергей\source\repos\Sem2Pro\TokenParsing\bin\Debug\net472\TokenParsing.pdb
-C:\Users\Сергей\source\repos\Sem2Pro\TokenParsing\obj\Debug\net472\TokenParsing.exe
-C:\Users\Сергей\source\repos\Sem2Pro\TokenParsing\obj\Debug\net472\TokenParsing.pdb
-C:\Users\Сергей\source\repos\Sem2Pro\TokenParsing\obj\Debug\net472\TokenParsing.csprojAssemblyReference.cache
