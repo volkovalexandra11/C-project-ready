@@ -43,7 +43,7 @@ namespace UserLayer.Controllers.Auxiliary
                 throw new DrawingException("Empty input!");
             }
             var picture = drawer.Draw(functionInfos);
-            cache.Add(name, picture);
+            cache.TryAdd(name, picture);
             return name;
         }
     }

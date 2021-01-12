@@ -1,12 +1,11 @@
-﻿
-@using WebApplication2.Models
+﻿@using WebApplication2.Models
 @model WebApplication2.Models.ByPointsPageViewModel
 
 
 
 <div class="text-center">
     <h1 class="display-4">I'm a Graph Drawer</h1>
-    <form method="post" , asp-controller="Points" asp-action="Graph">
+    <form method="post" asp-controller="Points">
         <p>
             <label>Hello! Please enter your function</label><br />
             <br />
@@ -25,8 +24,8 @@
             }
         </p>
         <p>
-            <input type="submit" name="draw" value="Draw" />
-            <input type="submit" name="addFunctions" value="Add Function" />
+            <input type="submit" name="draw" value="Draw" formaction=@Url.Action("ProcessDraw", "Points")/>
+            <input type="submit" name="addFunctions" value="Add Function" formaction=@Url.Action("ProcessAdd", "Points")/>
         </p>
     </form>
 </div>

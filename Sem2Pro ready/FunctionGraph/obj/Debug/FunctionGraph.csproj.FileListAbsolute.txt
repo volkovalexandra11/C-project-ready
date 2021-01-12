@@ -1,0 +1,187 @@
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\FunctionGraph.exe.config
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\FunctionGraph.exe
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\FunctionGraph.pdb
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\obj\Debug\FunctionGraph.csprojAssemblyReference.cache
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\obj\Debug\FunctionGraph.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\obj\Debug\FunctionGraph.exe
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\obj\Debug\FunctionGraph.pdb
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\SixLabors.ImageSharp.dll
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\System.Buffers.dll
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\System.Memory.dll
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\SixLabors.ImageSharp.xml
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\System.Buffers.xml
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\System.Memory.xml
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\obj\Debug\FunctionGraph.csproj.CopyComplete
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\ZedGraph.dll
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\ZedGraph.Web.dll
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\ZedGraph.xml
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\ZedGraph.Web.xml
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\alexa\Desktop\Универ\2 курс\Sem2Pro\Sem2Pro\FunctionGraph\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\FunctionGraph.exe.config
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\FunctionGraph.exe
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\FunctionGraph.pdb
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\System.Buffers.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\System.Memory.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\SixLabors.ImageSharp.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\ZedGraph.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\ZedGraph.Web.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\obj\Debug\FunctionGraph.csprojAssemblyReference.cache
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\obj\Debug\FunctionGraph.exe.config
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\obj\Debug\FunctionGraph.csproj.CoreCompileInputs.cache
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\obj\Debug\FunctionGraph.csproj.CopyComplete
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\obj\Debug\FunctionGraph.exe
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\obj\Debug\FunctionGraph.pdb
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Castle.Core.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Ninject.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Ninject.Extensions.Conventions.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Ninject.Extensions.Factory.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Ninject.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Ninject.Extensions.Conventions.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Ninject.Extensions.Factory.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.DataProtection.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Session.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\System.Security.AccessControl.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\System.Security.Permissions.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.DataProtection.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.DataProtection.Abstractions.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Session.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\alexa\RiderProjects\C-project\Sem2Pro\FunctionGraph\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\FunctionGraph.exe.config
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\FunctionGraph.exe
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\FunctionGraph.pdb
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Castle.Core.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.DataProtection.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Session.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Ninject.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Ninject.Extensions.Conventions.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Ninject.Extensions.Factory.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\System.Buffers.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\System.Memory.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\System.Security.Permissions.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.DataProtection.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.DataProtection.Abstractions.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.AspNetCore.Session.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Ninject.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Ninject.Extensions.Conventions.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\Ninject.Extensions.Factory.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\SixLabors.ImageSharp.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\ZedGraph.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\ZedGraph.Web.xml
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\obj\Debug\FunctionGraph.csprojAssemblyReference.cache
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\obj\Debug\FunctionGraph.exe.config
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\obj\Debug\FunctionGraph.csproj.CoreCompileInputs.cache
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\obj\Debug\FunctionGraph.csproj.CopyComplete
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\obj\Debug\FunctionGraph.exe
+C:\Users\Сергей\source\repos\Sem2Pro\FunctionGraph\obj\Debug\FunctionGraph.pdb

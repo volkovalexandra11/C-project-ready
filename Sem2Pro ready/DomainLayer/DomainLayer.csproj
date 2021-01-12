@@ -84,6 +84,7 @@
     <Compile Include="Parsers\Parsers\BinaryInfixParser.cs" />
     <Compile Include="Parsers\Parsers\BracketParser.cs" />
     <Compile Include="Parsers\Parsers\CallParser.cs" />
+    <Compile Include="Parsers\Parsers\ConstantParser.cs" />
     <Compile Include="Parsers\Parsers\DivisionParser.cs" />
     <Compile Include="Parsers\Parsers\MultiplicationParser.cs" />
     <Compile Include="Parsers\Parsers\NumericParser.cs" />
@@ -91,7 +92,7 @@
     <Compile Include="Parsers\Parsers\ParserCombinator.cs" />
     <Compile Include="Parsers\Parsers\PowerParser.cs" />
     <Compile Include="Parsers\Parsers\SubtractionParser.cs" />
-    <Compile Include="Parsers\Parsers\UnaryMinusParser.cs" />
+    <Compile Include="Parsers\Parsers\UnarySignParser.cs" />
     <Compile Include="Parsers\Parsers\WhereParser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

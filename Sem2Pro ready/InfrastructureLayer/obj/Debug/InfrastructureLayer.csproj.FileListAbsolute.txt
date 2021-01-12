@@ -1,6 +1,14 @@
-C:\Users\Сергей\source\repos\Sem2Pro\InfrastructureLayer\bin\Debug\InfrastructureLayer.exe.config
-C:\Users\Сергей\source\repos\Sem2Pro\InfrastructureLayer\bin\Debug\InfrastructureLayer.exe
-C:\Users\Сергей\source\repos\Sem2Pro\InfrastructureLayer\bin\Debug\InfrastructureLayer.pdb
-C:\Users\Сергей\source\repos\Sem2Pro\InfrastructureLayer\obj\Debug\InfrastructureLayer.csproj.CoreCompileInputs.cache
-C:\Users\Сергей\source\repos\Sem2Pro\InfrastructureLayer\obj\Debug\InfrastructureLayer.exe
-C:\Users\Сергей\source\repos\Sem2Pro\InfrastructureLayer\obj\Debug\InfrastructureLayer.pdb
+C:\Users\alexa\RiderProjects\Sem2Pro ready (2)\Sem2Pro ready\InfrastructureLayer\bin\Debug\InfrastructureLayer.exe.config
+C:\Users\alexa\RiderProjects\Sem2Pro ready (2)\Sem2Pro ready\InfrastructureLayer\bin\Debug\InfrastructureLayer.exe
+C:\Users\alexa\RiderProjects\Sem2Pro ready (2)\Sem2Pro ready\InfrastructureLayer\bin\Debug\InfrastructureLayer.pdb
+C:\Users\alexa\RiderProjects\Sem2Pro ready (2)\Sem2Pro ready\InfrastructureLayer\obj\Debug\InfrastructureLayer.csprojAssemblyReference.cache
+C:\Users\alexa\RiderProjects\Sem2Pro ready (2)\Sem2Pro ready\InfrastructureLayer\obj\Debug\InfrastructureLayer.csproj.CoreCompileInputs.cache
+C:\Users\alexa\RiderProjects\Sem2Pro ready (2)\Sem2Pro ready\InfrastructureLayer\obj\Debug\InfrastructureLayer.exe
+C:\Users\alexa\RiderProjects\Sem2Pro ready (2)\Sem2Pro ready\InfrastructureLayer\obj\Debug\InfrastructureLayer.pdb
+C:\Users\Сергей\source\repos\Sem2Pro ready\InfrastructureLayer\bin\Debug\InfrastructureLayer.exe.config
+C:\Users\Сергей\source\repos\Sem2Pro ready\InfrastructureLayer\bin\Debug\InfrastructureLayer.exe
+C:\Users\Сергей\source\repos\Sem2Pro ready\InfrastructureLayer\bin\Debug\InfrastructureLayer.pdb
+C:\Users\Сергей\source\repos\Sem2Pro ready\InfrastructureLayer\obj\Debug\InfrastructureLayer.csprojAssemblyReference.cache
+C:\Users\Сергей\source\repos\Sem2Pro ready\InfrastructureLayer\obj\Debug\InfrastructureLayer.csproj.CoreCompileInputs.cache
+C:\Users\Сергей\source\repos\Sem2Pro ready\InfrastructureLayer\obj\Debug\InfrastructureLayer.exe
+C:\Users\Сергей\source\repos\Sem2Pro ready\InfrastructureLayer\obj\Debug\InfrastructureLayer.pdb

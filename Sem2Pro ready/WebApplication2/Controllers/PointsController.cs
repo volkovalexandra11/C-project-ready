@@ -21,7 +21,7 @@ namespace UserLayer.Controllers
         }
 
 
-        public IActionResult Graph(PointsDescription[] pointsDescriptions, string draw, string addFunctions)
+        /*public IActionResult Graph(PointsDescription[] pointsDescriptions, string draw, string addFunctions)
         {
             if (!string.IsNullOrEmpty(draw))
             {
@@ -32,22 +32,29 @@ namespace UserLayer.Controllers
             {
                 var model = new ByPointsPageViewModel()
                 {
-                    Functions = pointsDescriptions.Append(new PointsDescription()
-                    {
-                        Points = ""
-                    }).ToArray()
+                    Functions = pointsDescriptions.Append(PointsDescription.Default).ToArray()
                 };
 
                 return View("../Home/ByPoints", model);
             }
             return View();
+        }*/
+
+        public IActionResult ProcessAdd(PointsDescription[] pointsDescriptions)
+        {
+            var model = new ByPointsPageViewModel()
+            {
+                Functions = pointsDescriptions.Append(PointsDescription.Default).ToArray()
+            };
+
+            return View("../Home/ByPoints", model);
         }
 
-        private IActionResult ProcessDraw(PointsDescription[] pointsDescriptions)
+        public IActionResult ProcessDraw(PointsDescription[] pointsDescriptions)
         {
             try
             {
-                return View(drawer.Draw(pointsDescriptions));
+                return View("Graph", drawer.Draw(pointsDescriptions));
             }
             catch (DrawingException e)
             {
@@ -57,7 +64,8 @@ namespace UserLayer.Controllers
 
         public IActionResult NewGraph(Guid name)
         {
-            return File(cache.Get(name), "image/jpeg");
+            cache.TryGet(name, out var content);
+            return File(content, "image/jpeg");
         }
 
         public IActionResult Error(string message)

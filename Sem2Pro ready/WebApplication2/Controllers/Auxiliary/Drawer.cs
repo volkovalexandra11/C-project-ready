@@ -18,7 +18,7 @@ namespace UserLayer.Controllers
             this.fDrawer = fDrawer;
         }
 
-        public Bitmap DrawGraph(FunctionInfo[] infos)
+        private Bitmap DrawGraph(FunctionInfo[] infos)
         {
             try
             {

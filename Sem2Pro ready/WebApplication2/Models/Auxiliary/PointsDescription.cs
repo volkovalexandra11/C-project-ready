@@ -10,5 +10,12 @@ namespace WebApplication2.Models
         public int RightBorder { get; set; }
         public Color Color { get; set; }
         public LinesType LineType { get; set; }
+
+        public static readonly PointsDescription Default = new PointsDescription
+        {
+            Points = "",
+            LeftBorder = -10,
+            RightBorder = 10
+        };
     }
 }

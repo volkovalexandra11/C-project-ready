@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
@@ -19,12 +18,11 @@ namespace UserLayer.Controllers
             this.cache = cache;
         }
 
-
         public IActionResult ProcessDraw(FunctionDescription[] functionDescriptions)
         {
             try
             {
-                return View("Graph",drawer.Draw(functionDescriptions));
+                return View("Graph", drawer.Draw(functionDescriptions));
             }
             catch (DrawingException e)
             {
@@ -36,32 +34,27 @@ namespace UserLayer.Controllers
         {
             var model = new ByFunctionPageViewModel
             {
-                Functions = functionDescriptions.Append(new FunctionDescription
-                {
-                    Function = "",
-                    LeftBorder = -10,
-                    RightBorder = 10
-                }).ToArray()
+                Functions = functionDescriptions.Append(FunctionDescription.Default).ToArray()
             };
 
             return View("../Home/ByFunction", model);
         }
-    
         
-
         public IActionResult NewGraph(Guid name)
         {
-            return File(cache.Get(name), "image/jpeg");
+            cache.TryGet(name, out var content);
+            return File(content, "image/jpeg");
         }
 
         public IActionResult Save(Guid name)
         {
             const string contentType = "APPLICATION/octet-stream";
             var fileDownloadName = $"{DateTime.Now.ToString(CultureInfo.InvariantCulture).Replace('/', ' ')}.jpeg";
-            return File(cache.Get(name), contentType, fileDownloadName);
+            cache.TryGet(name, out var content);
+            return File(content, contentType, fileDownloadName);
         }
 
-        public IActionResult Error(string message)
+        private IActionResult Error(string message)
         {
             return View("Error", new ErrorModel(message));
         }

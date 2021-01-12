@@ -1,35 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections.Concurrent;
 
-namespace UserLayer.Controllers
+namespace UserLayer.Controllers.Auxiliary
 {
     public class Cache
     {
-        public Dictionary<Guid, byte[]> Storadge { get; } 
-            = new Dictionary<Guid, byte[]>();
+        private ConcurrentDictionary<Guid, byte[]> Storage { get; } 
+            = new ConcurrentDictionary<Guid, byte[]>();
 
-        public byte[] Get(Guid id)
+        public bool TryGet(Guid id, out byte[] value)
         {
-            try
+            if (!Storage.TryGetValue(id, out value))
             {
-                return Storadge[id];
+                return false;
             }
-            catch (KeyNotFoundException exception)
-            {
-                throw new CacheException("No item in cache", exception);
-            }
+            return true;
         }
 
-        public void Add(Guid id, byte[] value)
+        public bool TryAdd(Guid id, byte[] value)
         {
-            try
-            {
-                Storadge.Add(id, value);
-            }
-            catch (ArgumentException exception)
-            {
-                throw new CacheException("Item already in cache", exception);
-            }
+            if (!Storage.TryAdd(id, value))
+                return false;
+            return true;
         }
     }
 }

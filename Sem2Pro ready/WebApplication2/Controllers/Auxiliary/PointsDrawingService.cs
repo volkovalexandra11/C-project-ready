@@ -37,7 +37,7 @@ namespace UserLayer.Controllers.Auxiliary
             }
 
             var picture = fDrawer.Draw(pointsInfos);
-            cache.Add(name, picture);
+            cache.TryAdd(name, picture);
             return name;
         }
     }

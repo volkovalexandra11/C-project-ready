@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\alexa\.nuget\packages\microsoft.net.test.sdk\16.5.0\build\netcoreapp2.1" t="Include">
+      <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
+    </e>
+    <e p="C:\Users\alexa\.nuget\packages\microsoft.testplatform.testhost\16.5.0\build\netcoreapp2.1\x64\testhost.dll" t="Include" />
+    <e p="C:\Users\alexa\.nuget\packages\microsoft.testplatform.testhost\16.5.0\build\netcoreapp2.1\x64\testhost.exe" t="Include" />
+    <e p="C:\Users\alexa\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\nunit.engine.api.dll" t="Include" />
+    <e p="C:\Users\alexa\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\nunit.engine.dll" t="Include" />
+    <e p="C:\Users\alexa\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\NUnit3.TestAdapter.dll" t="Include" />
+    <e p="C:\Users\alexa\.nuget\packages\nunit3testadapter\3.16.1\build\netcoreapp2.1\NUnit3.TestAdapter.pdb" t="Include" />
+    <e p="C:\Users\alexa\.Rider2019.3\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\alexa\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\alexa\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_WebApplication1.1730695054.00" t="ExcludeRecursive" />
+    <e p="C:\Users\alexa\RiderProjects\Sem2Pro ready (2)\Sem2Pro ready" t="IncludeFlat">
+      <e p="DomainLayer" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DomainLayer.csproj" t="IncludeRecursive" />
+        <e p="Drawing" t="Include">
+          <e p="Function.cs" t="Include" />
+          <e p="FunctionByPoints.cs" t="Include" />
+          <e p="FunctionDrawer.cs" t="Include" />
+          <e p="Graph.cs" t="Include" />
+          <e p="GraphDrawer.cs" t="Include" />
+          <e p="IDrawer.cs" t="Include" />
+          <e p="IPointsGetter.cs" t="Include" />
+          <e p="PontsGetter.cs" t="Include" />
+        </e>
+        <e p="License-LGPL.txt" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Parsers" t="Include">
+          <e p="AuxiliaryEntities" t="Include">
+            <e p="IParser.cs" t="Include" />
+            <e p="ParameterInfo.cs" t="Include" />
+            <e p="ParseException.cs" t="Include" />
+            <e p="ParserOrder.cs" t="Include" />
+            <e p="PrioritizedString.cs" t="Include" />
+          </e>
+          <e p="Parsers" t="Include">
+            <e p="AdditionParser.cs" t="Include" />
+            <e p="BinaryInfixParser.cs" t="Include" />
+            <e p="BracketParser.cs" t="Include" />
+            <e p="CallParser.cs" t="Include" />
+            <e p="DivisionParser.cs" t="Include" />
+            <e p="MultiplicationParser.cs" t="Include" />
+            <e p="NumericParser.cs" t="Include" />
+            <e p="ParameterParser.cs" t="Include" />
+            <e p="ParserCombinator.cs" t="Include" />
+            <e p="PowerParser.cs" t="Include" />
+            <e p="SubtractionParser.cs" t="Include" />
+            <e p="UnaryMinusParser.cs" t="Include" />
+            <e p="WhereParser.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="InfrastructureLayer" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Infrastructure" t="Include">
+          <e p="BracketPosition.cs" t="Include" />
+          <e p="Brackets.cs" t="Include" />
+          <e p="BracketType.cs" t="Include" />
+          <e p="CharExtensions.cs" t="Include" />
+          <e p="EnumerableExtensions.cs" t="Include" />
+          <e p="ExpressionComparerVisitor.cs" t="Include" />
+          <e p="MathExtensions.cs" t="Include" />
+          <e p="ParameterReplacerVisitor.cs" t="Include" />
+          <e p="StringExtensions.cs" t="Include" />
+        </e>
+        <e p="InfrastructureLayer.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="TokenParsing_Tests" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="TokenParsing_Tests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="TokenParsing_Tests.csproj" t="IncludeRecursive" />
+        <e p="TopDownTests.cs" t="Include" />
+      </e>
+      <e p="WebApplication1.sln" t="IncludeFlat" />
+      <e p="WebApplication2" t="IncludeRecursive">
+        <e p="8id6yGtgwyk.jpg" t="Include" />
+        <e p="app.config" t="Include" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="Auxiliary" t="Include">
+            <e p="Cache.cs" t="Include" />
+            <e p="CacheException.cs" t="Include" />
+            <e p="CacheItem.cs" t="Include" />
+            <e p="Drawer.cs" t="Include" />
+            <e p="DrawerForPoints.cs" t="Include" />
+            <e p="DrawingException.cs" t="Include" />
+            <e p="DrawingService.cs" t="Include" />
+            <e p="Email.cs" t="Include" />
+            <e p="EmailService.cs" t="Include" />
+            <e p="FunctionInfo.cs" t="Include" />
+            <e p="IFuncDrawer.cs" t="Include" />
+            <e p="IInfo.cs" t="Include" />
+            <e p="PointsDrawingService.cs" t="Include" />
+            <e p="PointsInfo.cs" t="Include" />
+          </e>
+          <e p="EmailController.cs" t="Include" />
+          <e p="ErrorController.cs" t="Include" />
+          <e p="GraphController.cs" t="Include" />
+          <e p="HomeController.cs" t="Include" />
+          <e p="PointsController.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="Auxiliary" t="Include">
+            <e p="FunctionDescription.cs" t="Include" />
+            <e p="IDrawerDescription.cs" t="Include" />
+            <e p="LinesType.cs" t="Include" />
+            <e p="PointsDescription.cs" t="Include" />
+          </e>
+          <e p="ByFunctionPageViewModel.cs" t="Include" />
+          <e p="ByPointsPageViewModel.cs" t="Include" />
+          <e p="ErrorModel.cs" t="Include" />
+          <e p="ErrorViewModel.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="net472" t="Include">
+              <e p="UserLayer.AssemblyInfo.cs" t="Include" />
+              <e p="UserLayer.RazorAssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="UserLayer.csproj" t="IncludeRecursive" />
+        <e p="Views" t="Include">
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="Error" t="Include" />
+          <e p="Graph" t="Include">
+            <e p="Error.cshtml" t="Include" />
+            <e p="Graph.cshtml" t="Include" />
+          </e>
+          <e p="Home" t="Include">
+            <e p="About.cshtml" t="Include" />
+            <e p="ByFunction.cshtml" t="Include" />
+            <e p="ByPoints.cshtml" t="Include" />
+            <e p="Contact.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+            <e p="Send.cshtml" t="Include" />
+            <e p="Send.cshtml.cs" t="Include" />
+          </e>
+          <e p="Points" t="Include">
+            <e p="Graph.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+            <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+            <e p="Error.cshtml" t="Include" />
+          </e>
+        </e>
+        <e p="wwwroot" t="Include">
+          <e p="css" t="Include">
+            <e p="site.css" t="Include" />
+            <e p="site.min.css" t="Include" />
+          </e>
+          <e p="favicon.ico" t="Include" />
+          <e p="images" t="Include">
+            <e p="banner1.svg" t="Include" />
+            <e p="banner2.svg" t="Include" />
+            <e p="banner3.svg" t="Include" />
+          </e>
+          <e p="js" t="Include">
+            <e p="site.js" t="Include" />
+            <e p="site.min.js" t="Include" />
+          </e>
+          <e p="lib" t="Include">
+            <e p="bootstrap" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="dist" t="Include">
+                <e p="css" t="Include">
+                  <e p="bootstrap-theme.css" t="Include" />
+                  <e p="bootstrap-theme.css.map" t="Include" />
+                  <e p="bootstrap-theme.min.css" t="Include" />
+                  <e p="bootstrap-theme.min.css.map" t="Include" />
+                  <e p="bootstrap.css" t="Include" />
+                  <e p="bootstrap.css.map" t="Include" />
+                  <e p="bootstrap.min.css" t="Include" />
+                  <e p="bootstrap.min.css.map" t="Include" />
+                </e>
+                <e p="fonts" t="Include">
+                  <e p="glyphicons-halflings-regular.eot" t="Include" />
+                  <e p="glyphicons-halflings-regular.svg" t="Include" />
+                  <e p="glyphicons-halflings-regular.ttf" t="Include" />
+                  <e p="glyphicons-halflings-regular.woff" t="Include" />
+                  <e p="glyphicons-halflings-regular.woff2" t="Include" />
+                </e>
+                <e p="js" t="Include">
+                  <e p="bootstrap.js" t="Include" />
+                  <e p="bootstrap.min.js" t="Include" />
+                  <e p="npm.js" t="Include" />
+                </e>
+              </e>
+              <e p="LICENSE" t="Include" />
+            </e>
+            <e p="jquery" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="dist" t="Include">
+                <e p="jquery.js" t="Include" />
+                <e p="jquery.min.js" t="Include" />
+                <e p="jquery.min.map" t="Include" />
+              </e>
+              <e p="LICENSE.txt" t="Include" />
+            </e>
+            <e p="jquery-validation" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="dist" t="Include">
+                <e p="additional-methods.js" t="Include" />
+                <e p="additional-methods.min.js" t="Include" />
+                <e p="jquery.validate.js" t="Include" />
+                <e p="jquery.validate.min.js" t="Include" />
+              </e>
+              <e p="LICENSE.md" t="Include" />
+            </e>
+            <e p="jquery-validation-unobtrusive" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="jquery.validate.unobtrusive.js" t="Include" />
+              <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+              <e p="LICENSE.txt" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="тихон.jpg" t="Include" />
+      </e>
+    </e>
+  </component>
+</project>

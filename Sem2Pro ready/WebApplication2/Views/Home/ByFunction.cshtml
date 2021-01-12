@@ -5,7 +5,7 @@
 
 <div class="text-center">
     <h1 class="display-4">I'm a Graph Drawer</h1>
-    <form method="post", asp-controller="Graph" asp-action="Graph">
+    <form method="post" asp-controller="Graph">
         <p>
             <label>Hello! Please enter your function</label><br />
             <br />
@@ -24,8 +24,8 @@
             }
         </p>
         <p>
-            <input type="submit" name="draw" value="Draw" />
-            <input type="submit" name="addFunctions" value="Add Function" />
+            <input type="submit" name="draw" value="Draw" formaction=@Url.Action("ProcessDraw", "Graph")/>
+            <input type="submit" name="addFunctions" value="Add Function" formaction=@Url.Action("ProcessAdd", "Graph")/>
         </p>
     </form>
 </div>

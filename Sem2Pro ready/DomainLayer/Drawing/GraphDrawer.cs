@@ -42,8 +42,8 @@ namespace DomainLayer.Drawing
                     if (point.Y > maxY)
                         maxY = point.Y;
                 }
-                var line = graphPane.AddCurve(graph.Name, graph.Points, graph.color, SymbolType.None);
-                line.Line.Style = graph.style;
+                var line = graphPane.AddCurve(graph.Name, graph.Points, graph.Color, SymbolType.None);
+                line.Line.Style = graph.Style;
                 line.Line.IsSmooth = true;
                 line.Line.Width = 3f;
             }

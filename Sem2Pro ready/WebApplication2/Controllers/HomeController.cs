@@ -22,12 +22,7 @@ namespace WebApplication2.Controllers
             {
                 Functions = new []
                 {
-                    new FunctionDescription
-                    {
-                        Function = "",
-                        LeftBorder = -10,
-                        RightBorder = 10
-                    }
+                    FunctionDescription.Default
                 }
             });
         }
@@ -38,12 +33,7 @@ namespace WebApplication2.Controllers
             {
                 Functions = new []
                 {
-                    new PointsDescription
-                    {
-                        Points = "",
-                        LeftBorder = -10,
-                        RightBorder = 10
-                    }
+                    PointsDescription.Default
                 }
             });
         }
@@ -53,15 +43,6 @@ namespace WebApplication2.Controllers
             return View();
         }
 
-        public IActionResult Choose(string byPoints, string byFunction)
-        {
-            if (!string.IsNullOrEmpty(byFunction))
-                return RedirectToAction("ByFunction");
-            if (!string.IsNullOrEmpty(byPoints))
-                return RedirectToAction("ByPoints");
-            return View("Index");
-        }
-        
         public IActionResult About()
         {
             ViewData["Message"] = "Hello! \n I'm a very stupid graph drawer";

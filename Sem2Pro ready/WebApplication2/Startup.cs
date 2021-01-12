@@ -40,6 +40,8 @@ namespace WebApplication2
             services.AddSingleton<IPointsGetter, PointsGetter>();
             services.AddSingleton<FunctionDrawer>();
             services.AddSingleton<EmailService>();
+            services.AddSingleton<DrawingService>();
+            services.AddSingleton<PointsDrawingService>();
             services.AddSingleton<Email>();
             services.AddSingleton<Drawer>();
             services.AddSingleton<DrawerForPoints>();
@@ -52,6 +54,7 @@ namespace WebApplication2
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            env.EnvironmentName = "Release";
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -69,13 +72,12 @@ namespace WebApplication2
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    "default",
+                    "{controller=Home}/{action=Index}/{id?}");
             });
         }
 
-
-        private void RegisterParsers(IServiceCollection services)
+        private static void RegisterParsers(IServiceCollection services)
         {
             services.AddSingleton<ParserCombinator, ParserCombinator>();
             services.AddSingleton(provider =>

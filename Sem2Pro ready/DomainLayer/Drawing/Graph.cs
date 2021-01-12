@@ -7,18 +7,18 @@ namespace FunctionGraph
     public class Graph
     {
         public PointPairList Points { get; }
-        public readonly Color color;
+        public readonly Color Color;
         public string Name { get; }
-        public DashStyle style { get; }
+        public DashStyle Style { get; }
         public double LeftBorder { get; }
         public double RightBorder { get; }
 
         public Graph(PointPairList points, Color color, string name, DashStyle style, double leftBorder, double rightBorder)
         {
             Points = points;
-            this.color = color;
+            Color = color;
             Name = name;
-            this.style = style;
+            Style = style;
             LeftBorder = leftBorder;
             RightBorder = rightBorder;
         }
