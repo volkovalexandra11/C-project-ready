@@ -19,7 +19,7 @@ namespace WebApplication2.Controllers
                 message.Subject = "Твой график";
                 var builder = new BodyBuilder{ HtmlBody = "<div style=\"color: green;\">Твой странный график ы</div>" };
                 builder.Attachments.Add("Your graph.jpeg", content);
-                builder.Attachments.Add("тихон.jpg");
+                builder.Attachments.Add("developer.jpg");
                 message.Body = builder
                     .ToMessageBody();
 

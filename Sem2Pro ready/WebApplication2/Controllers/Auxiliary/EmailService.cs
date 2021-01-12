@@ -17,7 +17,7 @@ namespace UserLayer.Controllers.Auxiliary
         public void Send(string email1, Guid name)
         {
             cache.TryGet(name, out var graph);
-            email.SendEmail(graph, email1);
+            email.SendEmail(graph, email1, "alexandr.sazhev@yandex.ru");
         }
     }
 }
