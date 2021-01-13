@@ -20,26 +20,6 @@ namespace UserLayer.Controllers
             this.cache = cache;
         }
 
-
-        /*public IActionResult Graph(PointsDescription[] pointsDescriptions, string draw, string addFunctions)
-        {
-            if (!string.IsNullOrEmpty(draw))
-            {
-                return ProcessDraw(pointsDescriptions);
-            }
-
-            if (!string.IsNullOrEmpty(addFunctions))
-            {
-                var model = new ByPointsPageViewModel()
-                {
-                    Functions = pointsDescriptions.Append(PointsDescription.Default).ToArray()
-                };
-
-                return View("../Home/ByPoints", model);
-            }
-            return View();
-        }*/
-
         public IActionResult ProcessAdd(PointsDescription[] pointsDescriptions)
         {
             var model = new ByPointsPageViewModel()

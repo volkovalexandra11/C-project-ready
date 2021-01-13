@@ -93,8 +93,8 @@ namespace WebApplication2
             services.AddSingleton<IParser, ParameterParser>();
             services.AddSingleton<IParser, PowerParser>();
             services.AddSingleton<IParser, SubtractionParser>();
-            services.AddSingleton<IParser, WhereParser>();
             services.AddSingleton<IParser, UnarySignParser>();
+            services.AddSingleton<IParser, WhereParser>();
         }
     }
 }
