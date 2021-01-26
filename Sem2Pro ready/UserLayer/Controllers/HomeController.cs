@@ -34,6 +34,11 @@ namespace WebApplication2.Controllers
             return View();
         }
 
+        public IActionResult Help()
+        {
+            return View();
+        }
+
         public IActionResult About()
         {
             ViewData["Message"] = "Hello! \n I'm a very stupid graph drawer";

@@ -16,20 +16,6 @@ namespace Infrastructure.TopDowns
             {
                 OrderedParsers[parser.Order] = parser;
             }
-            //OrderedParsers = new SortedDictionary<ParserOrder, IParser>
-            //{
-            //    [ParserOrder.Where] = new WhereParser(this),
-            //    [ParserOrder.Addition] = new AdditionParser(this),
-            //    [ParserOrder.Subtraction] = new SubtractionParser(this),
-            //    [ParserOrder.Multiplication] = new MultiplicationParser(this),
-            //    [ParserOrder.Division] = new DivisionParser(this),
-            //    [ParserOrder.UnaryMinus] = new UnaryMinusParser(this),
-            //    [ParserOrder.Call] = new CallParser(this),
-            //    [ParserOrder.Power] = new PowerParser(this),
-            //    [ParserOrder.Numeric] = new NumericParser(this),
-            //    [ParserOrder.Parameter] = new ParameterParser(this),
-            //    [ParserOrder.Bracket] = new BracketParser(this)
-            //};
         }
 
         public Func<double, double> Parse(string input)
