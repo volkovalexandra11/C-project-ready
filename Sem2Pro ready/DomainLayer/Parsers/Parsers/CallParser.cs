@@ -99,6 +99,9 @@ namespace Infrastructure.TopDowns
                 var (argsStart, argsEnd) = expr.Input[methodName.Length].IsOpeningBracket()
                     ? (methodName.Length + 1, expr.Length - 2)
                     : (methodName.Length, expr.Length - 1);
+                if (argsStart > argsEnd)
+                    throw new ParseException($"Empty function call: {expr.Input}");
+
                 var funcArgs = expr.Substring(argsStart, argsEnd - argsStart + 1);
                 var arguments = SplitArguments(funcArgs);
                 if (!MethodsByArgCount[methodName].TryGetValue(arguments.Length, out var method))
