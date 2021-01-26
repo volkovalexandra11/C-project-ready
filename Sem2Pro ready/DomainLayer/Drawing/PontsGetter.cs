@@ -13,17 +13,17 @@ namespace FunctionGraph
     {
         public PointPairList GetPointsForOneFunction(Function func, double leftBound, double rightBound)
         {
+            var function = (Function)func;
             leftBound = Math.Max(func.LeftBorder, leftBound);
             rightBound = Math.Min(func.RightBorder, rightBound);
             var points = new PointPairList();
             const double delta = 0.001;
             for (var x = leftBound; x <= rightBound; x += delta)
             {
-                var value = func.FuncBody(x);
+                var value = function.FuncBody(x);
                 if (!double.IsNaN(value))
-                    points.Add(new PointPair(x, func.FuncBody(x)));
+                    points.Add(new PointPair(x, function.FuncBody(x)));
             }
-
             return points;
         }
 

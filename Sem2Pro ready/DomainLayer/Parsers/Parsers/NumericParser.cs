@@ -19,6 +19,9 @@ namespace Infrastructure.TopDowns
         public bool TryParse(PrioritizedString expr, ParameterInfo paramInfo, out Expression parsed)
         {
             expr = expr.Trim();
+            if (expr.Length == 0)
+                throw new ParseException("Empty bracket expression was given");
+
             if (double.TryParse(
                 expr.Input,
                 NumberStyles.AllowDecimalPoint | NumberStyles.AllowLeadingSign,

@@ -27,6 +27,9 @@ namespace Infrastructure.TopDowns
         
         public bool TryParse(PrioritizedString expr, ParameterInfo paramInfo, out Expression parsed)
         {
+            if (expr.Length == 0)
+                throw new ParseException("Empty bracket expression was given");
+
             var minPriorityInds = expr.Priorities.GetMinIndexes();
             var whereParts = expr.SplitOnSubset("where", minPriorityInds);
             if (whereParts.Length > 2)

@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Drawing;
+using DomainLayer.Drawing;
 using ZedGraph;
 
 namespace FunctionGraph
 {
-    public class Function
+    public class Function : IFunction
     {
         public Func<double, double> FuncBody { get; }
         public Color Color { get; }

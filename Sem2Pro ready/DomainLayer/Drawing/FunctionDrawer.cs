@@ -5,7 +5,7 @@ using DomainLayer.Drawing;
 
 namespace FunctionGraph
 {
-    public class FunctionDrawer
+    public class FunctionDrawer : IFunctionDrawer
     {
         private readonly IPointsGetter pointsGetter;
         private readonly IDrawer graphDrawer;

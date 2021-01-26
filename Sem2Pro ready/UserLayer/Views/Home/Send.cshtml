@@ -1,0 +1,12 @@
+﻿@model Guid
+<div class="text-center">
+    <h1 class="display-4">I'm a very stupid Graph Drawer</h1>
+    <form method="post" action="~/Email/SendMail?name=@Model">
+        <p>
+            <input type="email" name="email1" placeholder="Enter email"/>
+        </p>
+        <p>
+            <input type="submit" value="Send" />
+        </p>
+    </form>
+</div>

@@ -15,6 +15,7 @@ namespace DomainLayer.Drawing
         {
             zedGraph = control;
         }
+
         public Bitmap Draw(IEnumerable<Graph> graphs)
         {
             var gr = graphs.ToList();
@@ -31,7 +32,7 @@ namespace DomainLayer.Drawing
             return zedGraph.MasterPane.GetImage(1000, 600, 25);
         }
 
-        private void AddFunctions(List<Graph> gr, GraphPane graphPane, ref double minY, ref double maxY)
+        private void AddFunctions(IEnumerable<Graph> gr, GraphPane graphPane, ref double minY, ref double maxY)
         {
             foreach (var graph in gr)
             {

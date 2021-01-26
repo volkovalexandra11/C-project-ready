@@ -19,7 +19,6 @@ namespace Infrastructure.TopDowns
             {
                 ["abs"] = GetFromMath("Abs"),
                 ["sqrt"] = GetFromMath("Sqrt"),
-                //["cbrt"] = GetFromMath("Cbrt"),
 
                 ["sin"] = GetFromMath("Sin"),
                 ["cos"] = GetFromMath("Cos"),
@@ -35,14 +34,12 @@ namespace Infrastructure.TopDowns
                 ["arcctg"] = GetFromMathExt("Acot"),
                 ["arccot"] = GetFromMathExt("Acot"),
 
-                //["lcm"] = GetFromMathExt("Gcd"),
-                //["gcd"] = GetFromMathExt("Gcd"),
                 ["floor"] = GetFromMath("Floor"),
                 ["round"] = GetFromMath("Round"),
 
                 ["exp"] = GetFromMath("Exp"),
                 ["ln"] = GetFromMath("Log"),
-                ["log"] = GetFromMath("Log"), // !1!!!1
+                ["log"] = GetFromMath("Log"),
                 ["log2"] = GetFromMathExt("Log2"),
                 ["sign"] = GetFromMath("Sign")
             };
@@ -83,6 +80,9 @@ namespace Infrastructure.TopDowns
         public bool TryParse(PrioritizedString expr, ParameterInfo paramInfo, out Expression parsed)
         {
             expr = expr.Trim();
+            if (expr.Length == 0)
+                throw new ParseException("Empty bracket expression was given");
+
             foreach (var methodName in MethodNamesSorted)
             {
                 if (!expr.Input.StartsWith(methodName))

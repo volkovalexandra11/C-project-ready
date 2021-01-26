@@ -73,6 +73,8 @@
     <Compile Include="Drawing\Graph.cs" />
     <Compile Include="Drawing\GraphDrawer.cs" />
     <Compile Include="Drawing\IDrawer.cs" />
+    <Compile Include="Drawing\IFunction.cs" />
+    <Compile Include="Drawing\IFunctionDrawer.cs" />
     <Compile Include="Drawing\IPointsGetter.cs" />
     <Compile Include="Drawing\PontsGetter.cs" />
     <Compile Include="Parsers\AuxiliaryEntities\IParser.cs" />

@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Drawing;
+using DomainLayer.Drawing;
 using ZedGraph;
 
 namespace FunctionGraph
 {
-    public class FunctionByPoints
+    public class FunctionByPoints : IFunction
     {
         public Color Color { get; }
         public double LeftBorder { get; }
         public double RightBorder { get; }
         public string Name { get; }
         public System.Drawing.Drawing2D.DashStyle Style { get; }
-
         public PointPairList Points { get; }
 
         public FunctionByPoints(

@@ -1,0 +1,60 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserLayer", "UserLayer\UserLayer.csproj", "{F71B17B1-E07E-4039-85FF-64CE68104AEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainLayer", "DomainLayer\DomainLayer.csproj", "{9EB97E8F-CCB4-4584-9C5D-4E0956CB010F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfrastructureLayer", "InfrastructureLayer\InfrastructureLayer.csproj", "{C5AFDB68-F4F3-4612-B649-0EA6041D088C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TokenParsing_Tests", "TokenParsing_Tests\TokenParsing_Tests.csproj", "{67C156DC-A0DB-476F-8609-D3263065A449}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebTestsAttempt", "WebTests\WebTestsAttempt.csproj", "{009A1E4C-B0C4-415E-A3D0-9D5584769C6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingTestsAttempt", "DrawingTestsAttempt\DrawingTestsAttempt.csproj", "{3DF4179B-201F-46AF-938D-DFAF0659CF52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F76EAD49-3B6A-4BD2-8A72-4F1648314C6C}"
+	ProjectSection(SolutionItems) = preProject
+		Graph1.dgml = Graph1.dgml
+		Graph2.dgml = Graph2.dgml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F71B17B1-E07E-4039-85FF-64CE68104AEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71B17B1-E07E-4039-85FF-64CE68104AEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71B17B1-E07E-4039-85FF-64CE68104AEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71B17B1-E07E-4039-85FF-64CE68104AEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EB97E8F-CCB4-4584-9C5D-4E0956CB010F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EB97E8F-CCB4-4584-9C5D-4E0956CB010F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EB97E8F-CCB4-4584-9C5D-4E0956CB010F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EB97E8F-CCB4-4584-9C5D-4E0956CB010F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5AFDB68-F4F3-4612-B649-0EA6041D088C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5AFDB68-F4F3-4612-B649-0EA6041D088C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5AFDB68-F4F3-4612-B649-0EA6041D088C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5AFDB68-F4F3-4612-B649-0EA6041D088C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67C156DC-A0DB-476F-8609-D3263065A449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C156DC-A0DB-476F-8609-D3263065A449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C156DC-A0DB-476F-8609-D3263065A449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C156DC-A0DB-476F-8609-D3263065A449}.Release|Any CPU.Build.0 = Release|Any CPU
+		{009A1E4C-B0C4-415E-A3D0-9D5584769C6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{009A1E4C-B0C4-415E-A3D0-9D5584769C6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{009A1E4C-B0C4-415E-A3D0-9D5584769C6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{009A1E4C-B0C4-415E-A3D0-9D5584769C6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DF4179B-201F-46AF-938D-DFAF0659CF52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DF4179B-201F-46AF-938D-DFAF0659CF52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DF4179B-201F-46AF-938D-DFAF0659CF52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DF4179B-201F-46AF-938D-DFAF0659CF52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A35258E-C859-4170-9FF9-F8F08C54549F}
+	EndGlobalSection
+EndGlobal
